@@ -26,7 +26,8 @@ Clicking opens a **Markdown preview** tab. There, "Save .md" defaults to **not**
 ## Notes
 
 - `chrome://` pages, the Web Store, Chrome's built-in PDF viewer and the new tab page can't be injected — the icon shows a ✕ there.
-- `content/` is reserved; vendored libraries: [turndown](https://github.com/mixmark-io/turndown) (HTML→Markdown) and [marked](https://github.com/markedjs/marked) (Markdown→HTML preview), both MIT.
+- The extension UI follows your browser language (English and Traditional Chinese are bundled; `_locales/`). On a Traditional-Chinese browser you'll see the extension name as 「另存為 Markdown」, and the right-click menu items 「另存為 Markdown（整頁）」 (= full page) and 「另存為 Markdown（只存選取範圍）」 (= selection only).
+- Extraction lives in the single content script `content.js`; vendored libraries: [turndown](https://github.com/mixmark-io/turndown) (HTML→Markdown) and [marked](https://github.com/markedjs/marked) (Markdown→HTML preview), both MIT.
 
 ## 繁中簡版
 
@@ -36,4 +37,4 @@ Clicking opens a **Markdown preview** tab. There, "Save .md" defaults to **not**
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).

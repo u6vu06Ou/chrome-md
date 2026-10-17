@@ -38,7 +38,7 @@ function badge(text, title, revertMs) {
   if (revertMs) {
     badgeTimer = setTimeout(() => {
       chrome.action.setBadgeText({ text: '' });
-      chrome.action.setTitle({ title: '另存為 Markdown（Ctrl+Shift+M）' });
+      chrome.action.setTitle({ title: chrome.i18n.getMessage('actionTitle') });
     }, revertMs);
   }
 }
@@ -188,12 +188,12 @@ chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.removeAll(() => {
     chrome.contextMenus.create({
       id: 'md-page',
-      title: '另存為 Markdown（整頁）',
+      title: chrome.i18n.getMessage('menuFullPage'),
       contexts: ['page']
     });
     chrome.contextMenus.create({
       id: 'md-selection',
-      title: '另存為 Markdown（只存選取範圍）',
+      title: chrome.i18n.getMessage('menuSelection'),
       contexts: ['selection']
     });
   });

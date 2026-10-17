@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "另存為 Markdown",
+  "name": "__MSG_extName__",
   "version": "1.0.0",
-  "description": "把目前網頁轉成 Markdown。按工具列圖示或 Ctrl+Shift+M，可存成 .md 或列印成 PDF。",
+  "default_locale": "en",
+  "description": "__MSG_extDesc__",
   "minimum_chrome_version": "116",
   "permissions": ["activeTab", "scripting", "contextMenus"],
   "host_permissions": ["<all_urls>"],
@@ -10,7 +11,7 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "另存為 Markdown（Ctrl+Shift+M）",
+    "default_title": "__MSG_actionTitle__",
     "default_icon": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png",
@@ -29,7 +30,7 @@
       "suggested_key": {
         "default": "Ctrl+Shift+M"
       },
-      "description": "把目前頁面另存為 Markdown"
+      "description": "__MSG_cmdSaveAsMd__"
     }
   }
 }

@@ -3,6 +3,29 @@
      ① 儲存 .md  → 存原始檔，給 agent 讀
      ② 列印 / 另存 PDF → 用瀏覽器原生列印對話框印排版好的內容 */
 
+/* 介面文字跟著瀏覽器語言走（_locales）；HTML 裡的繁中字串當預設。 */
+(function localizeChromeUi() {
+  if (typeof chrome === 'undefined' || !chrome.i18n) return;
+  const t = (sel, key, attr) => {
+    const msg = chrome.i18n.getMessage(key);
+    if (!msg) return;
+    const el = document.getElementById(sel);
+    if (!el) return;
+    if (attr) el.setAttribute(attr, msg); else el.textContent = msg;
+  };
+  t('hint', 'preparing');
+  t('withImagesText', 'withImages');
+  t('withImagesTip', 'withImagesTip', 'title');
+  t('save', 'saveMd');
+  t('pdf', 'printPdf');
+  const msg = chrome.i18n.getMessage('previewTitle');
+  if (msg) {
+    const title = document.querySelector('#bar .title');
+    if (title) title.textContent = msg;
+    document.title = msg;
+  }
+})();
+
 const tokenPattern = /\]\(md-asset:[^)]+\)/g;
 
 let current = null;

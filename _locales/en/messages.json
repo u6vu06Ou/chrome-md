@@ -1,0 +1,38 @@
+{
+  "extName": {
+    "message": "Save as Markdown"
+  },
+  "extDesc": {
+    "message": "Turns the current web page into Markdown. Click the toolbar icon or press Ctrl+Shift+M to save as .md or print to PDF."
+  },
+  "actionTitle": {
+    "message": "Save as Markdown (Ctrl+Shift+M)"
+  },
+  "cmdSaveAsMd": {
+    "message": "Save the current page as Markdown"
+  },
+  "menuFullPage": {
+    "message": "Save as Markdown (full page)"
+  },
+  "menuSelection": {
+    "message": "Save as Markdown (selection)"
+  },
+  "previewTitle": {
+    "message": "Markdown preview"
+  },
+  "preparing": {
+    "message": "Preparing…"
+  },
+  "withImages": {
+    "message": "include images"
+  },
+  "withImagesTip": {
+    "message": "Base64-embeds images into the file; usually unnecessary when the file is for AI to read"
+  },
+  "saveMd": {
+    "message": "Save .md"
+  },
+  "printPdf": {
+    "message": "Print / Save as PDF"
+  }
+}

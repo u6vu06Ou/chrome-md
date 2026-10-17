@@ -1,0 +1,38 @@
+{
+  "extName": {
+    "message": "另存為 Markdown"
+  },
+  "extDesc": {
+    "message": "把目前網頁轉成 Markdown。按工具列圖示或 Ctrl+Shift+M，可存成 .md 或列印成 PDF。"
+  },
+  "actionTitle": {
+    "message": "另存為 Markdown（Ctrl+Shift+M）"
+  },
+  "cmdSaveAsMd": {
+    "message": "把目前頁面另存為 Markdown"
+  },
+  "menuFullPage": {
+    "message": "另存為 Markdown（整頁）"
+  },
+  "menuSelection": {
+    "message": "另存為 Markdown（只存選取範圍）"
+  },
+  "previewTitle": {
+    "message": "Markdown 預覽"
+  },
+  "preparing": {
+    "message": "正在準備…"
+  },
+  "withImages": {
+    "message": "含圖片"
+  },
+  "withImagesTip": {
+    "message": "圖片會變成一大串文字塞進檔案，給 AI 讀時通常不需要"
+  },
+  "saveMd": {
+    "message": "儲存 .md"
+  },
+  "printPdf": {
+    "message": "列印 / 另存 PDF"
+  }
+}
